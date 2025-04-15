@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
+html,
+body {
+  font-family: "Mulish", sans-serif;
+  background-color: #f4f7fa;
+  color: #4b506d;
+  height: 100%;
+  margin: 0;
+}
+
+.dashboard {
+  display: flex;
+}
+.dashboard nav {
+  background-color: #363740 !important;
+  color: #4b506d;
+  width: 255px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dashboard nav ul:nth-of-type(2) {
+  border-top: 1px solid #4b506d;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.dashboard nav .navbar-brand {
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 1rem;
+  padding-left: 32px;
+  display: flex;
+  align-items: center;
+}
+.dashboard nav img {
+  margin-right: 8px;
+}
+.dashboard nav .nav-link {
+  color: #9fa2b4;
+  font-size: 0.9rem;
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+}
+.dashboard nav .nav-link:hover, .dashboard nav .nav-link.active {
+  background-color: rgb(65.6694915254, 66.8855932203, 77.8305084746);
+  color: #dde2ff;
+}
+.dashboard nav .nav-link i {
+  font-size: 1rem;
+  margin-right: 12px;
+  margin-right: 8px;
+  margin-left: 10px;
+}
+.dashboard main {
+  flex-grow: 1;
+  margin-left: 255px;
+  padding: 50px 30px 30px;
+}
+.dashboard main .container {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+}
+.dashboard main h2 {
+  font-weight: 700;
+}
+.dashboard main .card .card-subtitle {
+  color: #9fa2b4;
+  font-weight: 700;
+}
+.dashboard main .card.border-start {
+  border: #3751ff solid !important;
+}
+.dashboard main .card-body h5 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.dashboard main .list-group-item {
+  border: none;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgb(182.7282608696, 186.0434782609, 205.2717391304);
+}
+.dashboard main .list-group-item:last-child {
+  border-bottom: none;
+}
+.dashboard main .badge {
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+.dashboard main .badge.bg-warning {
+  background-color: #fec400;
+  color: #fff;
+}
+.dashboard main .badge.bg-success {
+  background-color: #29cc97;
+  color: #fff;
+}
+.dashboard main .badge.bg-secondary {
+  background-color: #9fa2b4;
+  color: #fff;
+}
+.dashboard main .form-control {
+  border-radius: 8px;
+  box-shadow: none;
+  border: 1px solid rgb(182.7282608696, 186.0434782609, 205.2717391304);
+}
+.dashboard main .form-control:focus {
+  border-color: #3751ff;
+}
+
+/*# sourceMappingURL=styles.css.map */

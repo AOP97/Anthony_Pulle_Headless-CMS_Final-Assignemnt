@@ -1,0 +1,158 @@
+// Variables
+$bg-body: #f4f7fa;
+$sidebar-bg: #363740;
+$text-color: #4b506d;
+$highlight-color: #3751ff;
+$icon-color: #9fa2b4;
+$icon-hover-color: #dde2ff;
+$border-radius: 8px;
+$shadow-card: rgba(0, 0, 0, 0.1);
+
+// Font Import
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
+
+// Base Styles
+html,
+body {
+  font-family: "Mulish", sans-serif;
+  background-color: $bg-body;
+  color: $text-color;
+  height: 100%;
+  margin: 0;
+}
+
+.dashboard {
+  display: flex;
+
+  nav {
+    background-color: $sidebar-bg !important;
+    color: $text-color;
+    width: 255px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    ul:nth-of-type(2) {
+      border-top: 1px solid ($text-color);
+      margin-top: 1rem;
+      padding-top: 1rem;
+    }
+  
+
+    .navbar-brand {
+      font-weight: 700;
+      font-weight: 700;
+      font-size: 1rem;
+      padding-left: 32px;
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      margin-right: 8px;
+    }
+
+    .nav-link {
+      color: $icon-color;
+      font-size: 0.9rem;
+      padding: 12px 32px;
+      display: flex;
+      align-items: center;
+
+      &:hover, &.active {
+        background-color: lighten($sidebar-bg, 5%);
+        color: $icon-hover-color;
+      }
+
+      i {
+        font-size: 1rem;
+        margin-right: 12px;
+        margin-right: 8px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  main {
+    // padding: 2rem;
+    flex-grow: 1;
+    margin-left: 255px;
+    padding: 50px 30px 30px;
+
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+    }
+
+    h2 {
+      font-weight: 700;
+    }
+
+    .card {
+      // border-radius: $border-radius;
+      // box-shadow: 0 2px 4px $shadow-card;
+      // border: none;
+
+      .card-subtitle {
+        color: $icon-color;
+        font-weight: 700;
+      }
+
+      &.border-start {
+        border: $highlight-color solid !important;
+      }
+    }
+
+    .card-body h5 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .list-group-item {
+      border: none;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid lighten($text-color, 40%);
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .badge {
+      font-size: 0.85rem;
+      font-weight: 700;
+      border-radius: $border-radius;
+      padding: 4px 8px;
+    }
+
+    .badge.bg-warning {
+      background-color: #fec400;
+      color: #fff;
+    }
+
+    .badge.bg-success {
+      background-color: #29cc97;
+      color: #fff;
+    }
+
+    .badge.bg-secondary {
+      background-color: #9fa2b4;
+      color: #fff;
+    }
+
+    .form-control {
+      border-radius: $border-radius;
+      box-shadow: none;
+      border: 1px solid lighten($text-color, 40%);
+
+      &:focus {
+        border-color: $highlight-color;
+      }
+    }
+  }
+}
