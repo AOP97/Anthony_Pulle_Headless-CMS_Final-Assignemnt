@@ -21,7 +21,7 @@
     "highlight": "border-primary"
   },
   {
-    "title": "Closed Tickets",
+    "title": "Recently Closed Tickets",
     "count": 31,
     "highlight": "border-success"
   }
