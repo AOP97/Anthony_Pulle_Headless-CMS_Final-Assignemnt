@@ -5,8 +5,7 @@
   },
   {
     "title": "Overdue",
-    "count": 16,
-    "highlight": "border-danger"
+    "count": 16
   },
   {
     "title": "Open",
@@ -15,5 +14,15 @@
   {
     "title": "On Hold",
     "count": 64
+  },
+  {
+    "title": "Newly opened Tickets",
+    "count": 25,
+    "highlight": "border-primary"
+  },
+  {
+    "title": "Closed Tickets",
+    "count": 31,
+    "highlight": "border-success"
   }
 ]
