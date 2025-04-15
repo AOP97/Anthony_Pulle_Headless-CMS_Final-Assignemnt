@@ -1,11 +1,10 @@
 async function loadStatsCards() {
-    const response = await fetch('../data/data.json'); // make sure this path is correct
-    const stats = await response.json(); // will throw if JSON is invalid
-  
+    const response = await fetch('../data/data.json'); 
+    const stats = await response.json(); 
     console.log("Stats loaded:", stats);
   
     const container = document.getElementById('statsCardsContainer');
-    container.innerHTML = ''; // clear any existing hardcoded cards
+    container.innerHTML = '';
   
     stats.forEach((stat) => {
       const col = document.createElement('div');
@@ -24,5 +23,4 @@ async function loadStatsCards() {
     });
   }
   
-  // Run it
   loadStatsCards();
